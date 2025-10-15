@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif; 
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-wrapper, .header-content-wrapper {
+    max-width: 1000px; 
+    width: 90%; 
+    margin: 0 auto;
+}
+
+/* HEADER SECTION */
+.banner-image {
+    background: url(/headphones/images/headphones_hero_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+    background-position: center; 
+    display: flex;
+    flex-direction: column;
+    color: white; 
+}
+
+.header-content-wrapper {
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 32px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    color: white;
+    font-size: 12px;
+    font-weight: 700; 
+    text-transform: uppercase;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a:active {
+    color: #FF6565; 
+}
+
+.h-content-area {
+    text-align: center; 
+    margin-top: auto;
+    padding-bottom: 100px;
+}
+
+.h-main-text {
+    margin-bottom: 40px; 
+}
+
+.h-main-text h1 {
+    font-size: 32px; 
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.h-main-text .subtitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cta-button {
+    background-color: #ff6565;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 30px; 
+    transition: opacity 0.3s;
+}
+
+.cta-button a {
+    color: white;
+}
+
+.cta-button:hover,
+.cta-button:active,
+.cta-button-form:hover,
+.cta-button-form:active {
+    opacity: 0.9;
+}
+
+.h-bottom-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    max-width: 700px; 
+    margin: 0 auto;
+}
+
+/* ================================================= */
+/* MOBILE RESPONSIVENESS (Max-width: 480px) */
+/* ================================================= */
+@media screen and (max-width: 480px) {
+    
+    /* Global Adjustments */
+    .content-wrapper, .header-content-wrapper {
+        width: 85%; 
+    }
+
+    /* Header/Navigation */
+    .nav-links {
+        display: none; 
+    }
+    .menu-icon {
+        display: block;
+    }
+
+    .banner-image {
+        height: 600px;
+    }
+    
+    .h-content-area {
+        padding-bottom: 50px;
+    }
+    .h-bottom-text {
+        padding: 0 10px;
+    }
